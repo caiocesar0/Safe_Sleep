@@ -1,0 +1,116 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/nome_do_banco
+spring.datasource.username=usuario
+spring.datasource.password=senha
+spring.jpa.hibernate.ddl-auto=update
+
+src/
+└── main/
+    ├── java/
+    │   └── com/
+    │       └── exemplo/
+    │           └── projeto/
+    │               ├── controller/
+    │               ├── model/
+    │               ├── repository/
+    │               ├── service/
+    │               └── security/
+    └── resources/
+        ├── application.properties
+package com.exemplo.projeto.model;
+
+import jakarta.persistence.*;
+import lombok.Data;
+
+@Entity
+@Data
+public class Usuario {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String nome;
+    private String cpf;
+    private String email;
+    private String senha;
+    private String telefone;
+}
+package com.exemplo.projeto.repository;
+
+import com.exemplo.projeto.model.Usuario;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+    Optional<Usuario> findByEmail(String email);
+}
+package com.exemplo.projeto.service;
+
+import com.exemplo.projeto.model.Usuario;
+import com.exemplo.projeto.repository.UsuarioRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.Optional;
+
+@Service
+public class UsuarioService {
+    @Autowired
+    private UsuarioRepository usuarioRepository;
+
+    public Usuario registrarUsuario(Usuario usuario) {
+        // Validação e lógica de negócio
+        return usuarioRepository.save(usuario);
+    }
+
+    public Optional<Usuario> buscarPorEmail(String email) {
+        return usuarioRepository.findByEmail(email);
+    }
+
+    // Outros métodos para update, delete, etc.
+}
+package com.exemplo.projeto.controller;
+
+import com.exemplo.projeto.model.Usuario;
+import com.exemplo.projeto.service.UsuarioService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/usuarios")
+public class UsuarioController {
+    @Autowired
+    private UsuarioService usuarioService;
+
+    @PostMapping("/registro")
+    public ResponseEntity<Usuario> registrarUsuario(@RequestBody Usuario usuario) {
+        // Lógica para validar senhas e outras verificações
+        return ResponseEntity.ok(usuarioService.registrarUsuario(usuario));
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<String> loginUsuario(@RequestParam String email, @RequestParam String senha) {
+        // Lógica de autenticação
+        return ResponseEntity.ok("Usuário autenticado com sucesso");
+    }
+
+    // Outros métodos para CRUD
+}
+package com.exemplo.projeto.security;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable()
+            .authorizeRequests()
+            .antMatchers("/api/usuarios/registro", "/api/usuarios/login").permitAll()
+            .anyRequest().authenticated();
+    }
+}
