@@ -30,7 +30,7 @@ import java.util.Optional;
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     Optional<Usuario> findByEmail(String email);
 }
-package com.exemplo.projeto.service;
+package com.exemplo.projeto.service; 
 
 import com.exemplo.projeto.model.Usuario;
 import com.exemplo.projeto.repository.UsuarioRepository;
