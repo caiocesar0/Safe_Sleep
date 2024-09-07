@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9311B122C88C16900CA1E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9311B112C88C16900CA1E03 /* AppDelegate.swift */; };
+		A9311B142C88C16900CA1E03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9311B132C88C16900CA1E03 /* SceneDelegate.swift */; };
+		A9311B162C88C16900CA1E03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9311B152C88C16900CA1E03 /* ViewController.swift */; };
+		A9311B192C88C16900CA1E03 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A9311B182C88C16900CA1E03 /* Base */; };
+		A9311B1C2C88C16900CA1E03 /* SafeSleepApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9311B1A2C88C16900CA1E03 /* SafeSleepApp.xcdatamodeld */; };
+		A9311B1E2C88C16D00CA1E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9311B1D2C88C16D00CA1E03 /* Assets.xcassets */; };
+		A9311B212C88C16D00CA1E03 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A9311B202C88C16D00CA1E03 /* Base */; };
+		A9311B2C2C88C16D00CA1E03 /* SafeSleepAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9311B2B2C88C16D00CA1E03 /* SafeSleepAppTests.swift */; };
+		A9311B362C88C16D00CA1E03 /* SafeSleepAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9311B352C88C16D00CA1E03 /* SafeSleepAppUITests.swift */; };
+		A9311B382C88C16D00CA1E03 /* SafeSleepAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9311B372C88C16D00CA1E03 /* SafeSleepAppUITestsLaunchTests.swift */; };
+		A95D897F2C8AB90300B6BB72 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D897E2C8AB90300B6BB72 /* LoginViewModel.swift */; };
+		A95D89822C8AB93000B6BB72 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D89812C8AB93000B6BB72 /* OnboardingViewController.swift */; };
+		A95D89842C8AB93F00B6BB72 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D89832C8AB93F00B6BB72 /* OnboardingViewModel.swift */; };
+		A95D89872C8AB97300B6BB72 /* ForgetPassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D89862C8AB97300B6BB72 /* ForgetPassWordViewController.swift */; };
+		A95D89892C8AB98100B6BB72 /* ForgetPassWordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D89882C8AB98100B6BB72 /* ForgetPassWordViewModel.swift */; };
+		A95D898D2C8AB9C200B6BB72 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D898C2C8AB9C200B6BB72 /* User.swift */; };
+		A95D898F2C8ABFB000B6BB72 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D898E2C8ABFB000B6BB72 /* Service.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9311B282C88C16D00CA1E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9311B062C88C16900CA1E03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9311B0D2C88C16900CA1E03;
+			remoteInfo = SafeSleepApp;
+		};
+		A9311B322C88C16D00CA1E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9311B062C88C16900CA1E03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9311B0D2C88C16900CA1E03;
+			remoteInfo = SafeSleepApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9311B0E2C88C16900CA1E03 /* SafeSleepApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeSleepApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9311B112C88C16900CA1E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9311B132C88C16900CA1E03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A9311B152C88C16900CA1E03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9311B182C88C16900CA1E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9311B1B2C88C16900CA1E03 /* SafeSleepApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SafeSleepApp.xcdatamodel; sourceTree = "<group>"; };
+		A9311B1D2C88C16D00CA1E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9311B202C88C16D00CA1E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9311B222C88C16D00CA1E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9311B272C88C16D00CA1E03 /* SafeSleepAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeSleepAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9311B2B2C88C16D00CA1E03 /* SafeSleepAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeSleepAppTests.swift; sourceTree = "<group>"; };
+		A9311B312C88C16D00CA1E03 /* SafeSleepAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeSleepAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9311B352C88C16D00CA1E03 /* SafeSleepAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeSleepAppUITests.swift; sourceTree = "<group>"; };
+		A9311B372C88C16D00CA1E03 /* SafeSleepAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeSleepAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A95D897E2C8AB90300B6BB72 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A95D89812C8AB93000B6BB72 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		A95D89832C8AB93F00B6BB72 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		A95D89862C8AB97300B6BB72 /* ForgetPassWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassWordViewController.swift; sourceTree = "<group>"; };
+		A95D89882C8AB98100B6BB72 /* ForgetPassWordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassWordViewModel.swift; sourceTree = "<group>"; };
+		A95D898C2C8AB9C200B6BB72 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A95D898E2C8ABFB000B6BB72 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9311B0B2C88C16900CA1E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9311B242C88C16D00CA1E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9311B2E2C88C16D00CA1E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9311B052C88C16900CA1E03 = {
+			isa = PBXGroup;
+			children = (
+				A9311B102C88C16900CA1E03 /* SafeSleepApp */,
+				A9311B2A2C88C16D00CA1E03 /* SafeSleepAppTests */,
+				A9311B342C88C16D00CA1E03 /* SafeSleepAppUITests */,
+				A9311B0F2C88C16900CA1E03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9311B0F2C88C16900CA1E03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9311B0E2C88C16900CA1E03 /* SafeSleepApp.app */,
+				A9311B272C88C16D00CA1E03 /* SafeSleepAppTests.xctest */,
+				A9311B312C88C16D00CA1E03 /* SafeSleepAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9311B102C88C16900CA1E03 /* SafeSleepApp */ = {
+			isa = PBXGroup;
+			children = (
+				A95D898B2C8AB9A000B6BB72 /* Model */,
+				A95D898A2C8AB99900B6BB72 /* Service */,
+				A95D897C2C8AB8C900B6BB72 /* Scenes */,
+				A9311B112C88C16900CA1E03 /* AppDelegate.swift */,
+				A9311B132C88C16900CA1E03 /* SceneDelegate.swift */,
+				A9311B172C88C16900CA1E03 /* Main.storyboard */,
+				A9311B1D2C88C16D00CA1E03 /* Assets.xcassets */,
+				A9311B1F2C88C16D00CA1E03 /* LaunchScreen.storyboard */,
+				A9311B222C88C16D00CA1E03 /* Info.plist */,
+				A9311B1A2C88C16900CA1E03 /* SafeSleepApp.xcdatamodeld */,
+			);
+			path = SafeSleepApp;
+			sourceTree = "<group>";
+		};
+		A9311B2A2C88C16D00CA1E03 /* SafeSleepAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9311B2B2C88C16D00CA1E03 /* SafeSleepAppTests.swift */,
+			);
+			path = SafeSleepAppTests;
+			sourceTree = "<group>";
+		};
+		A9311B342C88C16D00CA1E03 /* SafeSleepAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9311B352C88C16D00CA1E03 /* SafeSleepAppUITests.swift */,
+				A9311B372C88C16D00CA1E03 /* SafeSleepAppUITestsLaunchTests.swift */,
+			);
+			path = SafeSleepAppUITests;
+			sourceTree = "<group>";
+		};
+		A95D897C2C8AB8C900B6BB72 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A95D89802C8AB90800B6BB72 /* Onboarding */,
+				A95D897D2C8AB8CF00B6BB72 /* Login */,
+				A95D89852C8AB94500B6BB72 /* ForgetPassword */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A95D897D2C8AB8CF00B6BB72 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A9311B152C88C16900CA1E03 /* ViewController.swift */,
+				A95D897E2C8AB90300B6BB72 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A95D89802C8AB90800B6BB72 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A95D89812C8AB93000B6BB72 /* OnboardingViewController.swift */,
+				A95D89832C8AB93F00B6BB72 /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A95D89852C8AB94500B6BB72 /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				A95D89862C8AB97300B6BB72 /* ForgetPassWordViewController.swift */,
+				A95D89882C8AB98100B6BB72 /* ForgetPassWordViewModel.swift */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		A95D898A2C8AB99900B6BB72 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A95D898E2C8ABFB000B6BB72 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A95D898B2C8AB9A000B6BB72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A95D898C2C8AB9C200B6BB72 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9311B0D2C88C16900CA1E03 /* SafeSleepApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9311B3B2C88C16D00CA1E03 /* Build configuration list for PBXNativeTarget "SafeSleepApp" */;
+			buildPhases = (
+				A9311B0A2C88C16900CA1E03 /* Sources */,
+				A9311B0B2C88C16900CA1E03 /* Frameworks */,
+				A9311B0C2C88C16900CA1E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafeSleepApp;
+			productName = SafeSleepApp;
+			productReference = A9311B0E2C88C16900CA1E03 /* SafeSleepApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9311B262C88C16D00CA1E03 /* SafeSleepAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9311B3E2C88C16D00CA1E03 /* Build configuration list for PBXNativeTarget "SafeSleepAppTests" */;
+			buildPhases = (
+				A9311B232C88C16D00CA1E03 /* Sources */,
+				A9311B242C88C16D00CA1E03 /* Frameworks */,
+				A9311B252C88C16D00CA1E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9311B292C88C16D00CA1E03 /* PBXTargetDependency */,
+			);
+			name = SafeSleepAppTests;
+			productName = SafeSleepAppTests;
+			productReference = A9311B272C88C16D00CA1E03 /* SafeSleepAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9311B302C88C16D00CA1E03 /* SafeSleepAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9311B412C88C16D00CA1E03 /* Build configuration list for PBXNativeTarget "SafeSleepAppUITests" */;
+			buildPhases = (
+				A9311B2D2C88C16D00CA1E03 /* Sources */,
+				A9311B2E2C88C16D00CA1E03 /* Frameworks */,
+				A9311B2F2C88C16D00CA1E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9311B332C88C16D00CA1E03 /* PBXTargetDependency */,
+			);
+			name = SafeSleepAppUITests;
+			productName = SafeSleepAppUITests;
+			productReference = A9311B312C88C16D00CA1E03 /* SafeSleepAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9311B062C88C16900CA1E03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A9311B0D2C88C16900CA1E03 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A9311B262C88C16D00CA1E03 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A9311B0D2C88C16900CA1E03;
+					};
+					A9311B302C88C16D00CA1E03 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A9311B0D2C88C16900CA1E03;
+					};
+				};
+			};
+			buildConfigurationList = A9311B092C88C16900CA1E03 /* Build configuration list for PBXProject "SafeSleepApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9311B052C88C16900CA1E03;
+			productRefGroup = A9311B0F2C88C16900CA1E03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9311B0D2C88C16900CA1E03 /* SafeSleepApp */,
+				A9311B262C88C16D00CA1E03 /* SafeSleepAppTests */,
+				A9311B302C88C16D00CA1E03 /* SafeSleepAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9311B0C2C88C16900CA1E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9311B1E2C88C16D00CA1E03 /* Assets.xcassets in Resources */,
+				A9311B212C88C16D00CA1E03 /* Base in Resources */,
+				A9311B192C88C16900CA1E03 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9311B252C88C16D00CA1E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9311B2F2C88C16D00CA1E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9311B0A2C88C16900CA1E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9311B162C88C16900CA1E03 /* ViewController.swift in Sources */,
+				A95D89822C8AB93000B6BB72 /* OnboardingViewController.swift in Sources */,
+				A9311B122C88C16900CA1E03 /* AppDelegate.swift in Sources */,
+				A9311B1C2C88C16900CA1E03 /* SafeSleepApp.xcdatamodeld in Sources */,
+				A95D89892C8AB98100B6BB72 /* ForgetPassWordViewModel.swift in Sources */,
+				A95D897F2C8AB90300B6BB72 /* LoginViewModel.swift in Sources */,
+				A95D89842C8AB93F00B6BB72 /* OnboardingViewModel.swift in Sources */,
+				A95D89872C8AB97300B6BB72 /* ForgetPassWordViewController.swift in Sources */,
+				A95D898F2C8ABFB000B6BB72 /* Service.swift in Sources */,
+				A95D898D2C8AB9C200B6BB72 /* User.swift in Sources */,
+				A9311B142C88C16900CA1E03 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9311B232C88C16D00CA1E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9311B2C2C88C16D00CA1E03 /* SafeSleepAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9311B2D2C88C16D00CA1E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9311B362C88C16D00CA1E03 /* SafeSleepAppUITests.swift in Sources */,
+				A9311B382C88C16D00CA1E03 /* SafeSleepAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9311B292C88C16D00CA1E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9311B0D2C88C16900CA1E03 /* SafeSleepApp */;
+			targetProxy = A9311B282C88C16D00CA1E03 /* PBXContainerItemProxy */;
+		};
+		A9311B332C88C16D00CA1E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9311B0D2C88C16900CA1E03 /* SafeSleepApp */;
+			targetProxy = A9311B322C88C16D00CA1E03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9311B172C88C16900CA1E03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9311B182C88C16900CA1E03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9311B1F2C88C16D00CA1E03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9311B202C88C16D00CA1E03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9311B392C88C16D00CA1E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9311B3A2C88C16D00CA1E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9311B3C2C88C16D00CA1E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafeSleepApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fiap.SafeSleepApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9311B3D2C88C16D00CA1E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafeSleepApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fiap.SafeSleepApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9311B3F2C88C16D00CA1E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fiap.SafeSleepAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafeSleepApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SafeSleepApp";
+			};
+			name = Debug;
+		};
+		A9311B402C88C16D00CA1E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fiap.SafeSleepAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafeSleepApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SafeSleepApp";
+			};
+			name = Release;
+		};
+		A9311B422C88C16D00CA1E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fiap.SafeSleepAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SafeSleepApp;
+			};
+			name = Debug;
+		};
+		A9311B432C88C16D00CA1E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fiap.SafeSleepAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SafeSleepApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9311B092C88C16900CA1E03 /* Build configuration list for PBXProject "SafeSleepApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9311B392C88C16D00CA1E03 /* Debug */,
+				A9311B3A2C88C16D00CA1E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9311B3B2C88C16D00CA1E03 /* Build configuration list for PBXNativeTarget "SafeSleepApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9311B3C2C88C16D00CA1E03 /* Debug */,
+				A9311B3D2C88C16D00CA1E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9311B3E2C88C16D00CA1E03 /* Build configuration list for PBXNativeTarget "SafeSleepAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9311B3F2C88C16D00CA1E03 /* Debug */,
+				A9311B402C88C16D00CA1E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9311B412C88C16D00CA1E03 /* Build configuration list for PBXNativeTarget "SafeSleepAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9311B422C88C16D00CA1E03 /* Debug */,
+				A9311B432C88C16D00CA1E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A9311B1A2C88C16900CA1E03 /* SafeSleepApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A9311B1B2C88C16900CA1E03 /* SafeSleepApp.xcdatamodel */,
+			);
+			currentVersion = A9311B1B2C88C16900CA1E03 /* SafeSleepApp.xcdatamodel */;
+			path = SafeSleepApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A9311B062C88C16900CA1E03 /* Project object */;
+}
