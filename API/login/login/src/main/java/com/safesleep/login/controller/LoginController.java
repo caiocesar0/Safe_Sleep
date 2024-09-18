@@ -44,4 +44,14 @@ public class LoginController {
             return ResponseEntity.badRequest().build();
         }
     }
+
+    @DeleteMapping
+    public ResponseEntity<Void> deleteLogin(@RequestBody @Validated LoginDto loginDto) {
+        Boolean success = service.deleteLogin(loginDto);
+        if (success) {
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.badRequest().build();
+        }
+    }
 }

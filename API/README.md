@@ -26,9 +26,7 @@ O projeto utiliza as seguintes dependências:
 
    Certifique-se de que o MySQL está instalado e em execução. Configure a URL de conexão, nome do banco de dados, usuário e senha no arquivo `application.properties` ou `application.yml` na pasta `src/main/resources`.
 
-   A criação do Database e tables, acontecem automaticamente com a execução da API
-
-3. **Executando o Projeto**
+2. **Executando o Projeto**
 
    Para construir e executar o projeto, use os seguintes comandos Maven:
 
@@ -36,7 +34,7 @@ O projeto utiliza as seguintes dependências:
    mvn clean install
    mvn spring-boot:run
 
-4. **Porta LocalHost**
+3. **Porta LocalHost**
    Certifique-se que a portal localhost:8080 esteja livre para executar o build
 
 ## Observação

@@ -56,4 +56,18 @@ public class LoginService {
             return false;
         }
     }
+
+    public Boolean deleteLogin(LoginDto loginDto) {
+        LoginModel login = repository.findByUsername(loginDto.getUsername());
+        if (login != null) {
+            try {
+                repository.delete(login);
+                return true;
+            } catch (EntityNotFoundException e) {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
 }
