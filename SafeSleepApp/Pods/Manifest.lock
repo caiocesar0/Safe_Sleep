@@ -1,0 +1,24 @@
+PODS:
+  - PromiseKit (8.1.2):
+    - PromiseKit/CorePromise (= 8.1.2)
+    - PromiseKit/Foundation (= 8.1.2)
+    - PromiseKit/UIKit (= 8.1.2)
+  - PromiseKit/CorePromise (8.1.2)
+  - PromiseKit/Foundation (8.1.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (8.1.2):
+    - PromiseKit/CorePromise
+
+DEPENDENCIES:
+  - PromiseKit
+
+SPEC REPOS:
+  trunk:
+    - PromiseKit
+
+SPEC CHECKSUMS:
+  PromiseKit: e057b5b3c0ce9a0145674d633930924234104ee3
+
+PODFILE CHECKSUM: 483c1d888355b48e96b813e580398f7d9b06cbb7
+
+COCOAPODS: 1.15.2

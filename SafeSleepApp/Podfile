@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SafeSleepApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SafeSleepApp
+  
+  pod 'PromiseKit'
+
+
+  target 'SafeSleepAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SafeSleepAppUITests' do
+    # Pods for testing
+  end
+
+end

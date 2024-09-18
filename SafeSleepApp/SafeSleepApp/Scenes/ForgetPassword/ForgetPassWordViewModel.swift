@@ -14,21 +14,16 @@ class ForgetPasswordViewModel {
     
     func validateNewPassword(email: String, document: String, password: String, confirmPassword: String) {
         
-        guard let user = service.getUser(email: email) else {
-            viewController?.presentAlert(title: "Usuário não encontrado", message: "informar um usuário valido")
-            return
-        }
-        
-        if user.document == document{
-            if password == confirmPassword {
-                service.save(user: User(name: user.name, document: user.document, email: user.email, password: password))
-                
-                viewController?.routeToSucess()
-            } else {
-                viewController?.presentAlert(title: "Senhas divergentes", message: "Por favor informe duas senhas iguais")
-            }
+        if password == confirmPassword {
+            service.changePassword(model: User(id: nil, username: document, password: password, email: email, name: nil))?.done({ _ in
+                self.viewController?.routeToSucess()
+            })
+            .catch({ _ in
+                self.viewController?.presentAlert(title: "Informações invalidas", message: "revise as informações para realizar a troca de senha")
+            })
         } else {
-            viewController?.presentAlert(title: "Documento invalido", message: "Documento informado não encotrado")
+            viewController?.presentAlert(title: "Senhas divergentes", message: "Por favor informe duas senhas iguais")
         }
     }
+    
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CFA37D0A13CCE7C982518A8 /* Pods_SafeSleepApp_SafeSleepAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E084E180C46A4D24A6799ED7 /* Pods_SafeSleepApp_SafeSleepAppUITests.framework */; };
 		A9311B122C88C16900CA1E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9311B112C88C16900CA1E03 /* AppDelegate.swift */; };
 		A9311B142C88C16900CA1E03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9311B132C88C16900CA1E03 /* SceneDelegate.swift */; };
 		A9311B162C88C16900CA1E03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9311B152C88C16900CA1E03 /* ViewController.swift */; };
@@ -24,6 +25,10 @@
 		A95D89892C8AB98100B6BB72 /* ForgetPassWordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D89882C8AB98100B6BB72 /* ForgetPassWordViewModel.swift */; };
 		A95D898D2C8AB9C200B6BB72 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D898C2C8AB9C200B6BB72 /* User.swift */; };
 		A95D898F2C8ABFB000B6BB72 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D898E2C8ABFB000B6BB72 /* Service.swift */; };
+		A9A1902C2C9969E40061DB8B /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1902B2C9969E40061DB8B /* NetworkProvider.swift */; };
+		A9DFB0172C9968CA0030430E /* RequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DFB0162C9968C90030430E /* RequestProvider.swift */; };
+		AF50306529A8BCF9417C6C43 /* Pods_SafeSleepAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ABBF08143E23BB1BCA5C1A2 /* Pods_SafeSleepAppTests.framework */; };
+		F19930108C921FF533FFB2B9 /* Pods_SafeSleepApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C1EA786C6C102948CCFE4B /* Pods_SafeSleepApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		097C579409F3107CD181F6A4 /* Pods-SafeSleepApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeSleepApp.debug.xcconfig"; path = "Target Support Files/Pods-SafeSleepApp/Pods-SafeSleepApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3ABBF08143E23BB1BCA5C1A2 /* Pods_SafeSleepAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeSleepAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		404D8A5C317A2F10F8B46AEE /* Pods-SafeSleepAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeSleepAppTests.release.xcconfig"; path = "Target Support Files/Pods-SafeSleepAppTests/Pods-SafeSleepAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		431F75813D73BDED3207943C /* Pods-SafeSleepAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeSleepAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SafeSleepAppTests/Pods-SafeSleepAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7BB02060079B1199C8CF6D90 /* Pods-SafeSleepApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeSleepApp.release.xcconfig"; path = "Target Support Files/Pods-SafeSleepApp/Pods-SafeSleepApp.release.xcconfig"; sourceTree = "<group>"; };
+		80966A4C38F67FAD0AC35037 /* Pods-SafeSleepApp-SafeSleepAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeSleepApp-SafeSleepAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SafeSleepApp-SafeSleepAppUITests/Pods-SafeSleepApp-SafeSleepAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9311B0E2C88C16900CA1E03 /* SafeSleepApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeSleepApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9311B112C88C16900CA1E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9311B132C88C16900CA1E03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +76,11 @@
 		A95D89882C8AB98100B6BB72 /* ForgetPassWordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassWordViewModel.swift; sourceTree = "<group>"; };
 		A95D898C2C8AB9C200B6BB72 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A95D898E2C8ABFB000B6BB72 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A9A1902B2C9969E40061DB8B /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		A9DFB0162C9968C90030430E /* RequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProvider.swift; sourceTree = "<group>"; };
+		BAB6978CE2E6C3FA5689C702 /* Pods-SafeSleepApp-SafeSleepAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeSleepApp-SafeSleepAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SafeSleepApp-SafeSleepAppUITests/Pods-SafeSleepApp-SafeSleepAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E084E180C46A4D24A6799ED7 /* Pods_SafeSleepApp_SafeSleepAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeSleepApp_SafeSleepAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C1EA786C6C102948CCFE4B /* Pods_SafeSleepApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeSleepApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19930108C921FF533FFB2B9 /* Pods_SafeSleepApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF50306529A8BCF9417C6C43 /* Pods_SafeSleepAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CFA37D0A13CCE7C982518A8 /* Pods_SafeSleepApp_SafeSleepAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5511147A735844F9C8570B33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1EA786C6C102948CCFE4B /* Pods_SafeSleepApp.framework */,
+				E084E180C46A4D24A6799ED7 /* Pods_SafeSleepApp_SafeSleepAppUITests.framework */,
+				3ABBF08143E23BB1BCA5C1A2 /* Pods_SafeSleepAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9311B052C88C16900CA1E03 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +128,8 @@
 				A9311B2A2C88C16D00CA1E03 /* SafeSleepAppTests */,
 				A9311B342C88C16D00CA1E03 /* SafeSleepAppUITests */,
 				A9311B0F2C88C16900CA1E03 /* Products */,
+				F5E8B900D748B5C456FB201F /* Pods */,
+				5511147A735844F9C8570B33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +146,7 @@
 		A9311B102C88C16900CA1E03 /* SafeSleepApp */ = {
 			isa = PBXGroup;
 			children = (
+				A9DFB0152C9968930030430E /* Network */,
 				A95D898B2C8AB9A000B6BB72 /* Model */,
 				A95D898A2C8AB99900B6BB72 /* Service */,
 				A95D897C2C8AB8C900B6BB72 /* Scenes */,
@@ -199,6 +231,28 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A9DFB0152C9968930030430E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A9DFB0162C9968C90030430E /* RequestProvider.swift */,
+				A9A1902B2C9969E40061DB8B /* NetworkProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F5E8B900D748B5C456FB201F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				097C579409F3107CD181F6A4 /* Pods-SafeSleepApp.debug.xcconfig */,
+				7BB02060079B1199C8CF6D90 /* Pods-SafeSleepApp.release.xcconfig */,
+				80966A4C38F67FAD0AC35037 /* Pods-SafeSleepApp-SafeSleepAppUITests.debug.xcconfig */,
+				BAB6978CE2E6C3FA5689C702 /* Pods-SafeSleepApp-SafeSleepAppUITests.release.xcconfig */,
+				431F75813D73BDED3207943C /* Pods-SafeSleepAppTests.debug.xcconfig */,
+				404D8A5C317A2F10F8B46AEE /* Pods-SafeSleepAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9311B3B2C88C16D00CA1E03 /* Build configuration list for PBXNativeTarget "SafeSleepApp" */;
 			buildPhases = (
+				988AD6A75B9F3D15C0D43E40 /* [CP] Check Pods Manifest.lock */,
 				A9311B0A2C88C16900CA1E03 /* Sources */,
 				A9311B0B2C88C16900CA1E03 /* Frameworks */,
 				A9311B0C2C88C16900CA1E03 /* Resources */,
+				8507C778B85B9BDD7520C238 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9311B3E2C88C16D00CA1E03 /* Build configuration list for PBXNativeTarget "SafeSleepAppTests" */;
 			buildPhases = (
+				ECBD811F271E3E6CD817CA8C /* [CP] Check Pods Manifest.lock */,
 				A9311B232C88C16D00CA1E03 /* Sources */,
 				A9311B242C88C16D00CA1E03 /* Frameworks */,
 				A9311B252C88C16D00CA1E03 /* Resources */,
@@ -241,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9311B412C88C16D00CA1E03 /* Build configuration list for PBXNativeTarget "SafeSleepAppUITests" */;
 			buildPhases = (
+				32F787F010AB23BDD690EF96 /* [CP] Check Pods Manifest.lock */,
 				A9311B2D2C88C16D00CA1E03 /* Sources */,
 				A9311B2E2C88C16D00CA1E03 /* Frameworks */,
 				A9311B2F2C88C16D00CA1E03 /* Resources */,
+				62537E4D9531B3D79E6179E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,6 +384,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32F787F010AB23BDD690EF96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafeSleepApp-SafeSleepAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62537E4D9531B3D79E6179E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SafeSleepApp-SafeSleepAppUITests/Pods-SafeSleepApp-SafeSleepAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SafeSleepApp-SafeSleepAppUITests/Pods-SafeSleepApp-SafeSleepAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SafeSleepApp-SafeSleepAppUITests/Pods-SafeSleepApp-SafeSleepAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8507C778B85B9BDD7520C238 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SafeSleepApp/Pods-SafeSleepApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SafeSleepApp/Pods-SafeSleepApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SafeSleepApp/Pods-SafeSleepApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		988AD6A75B9F3D15C0D43E40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafeSleepApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECBD811F271E3E6CD817CA8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafeSleepAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9311B0A2C88C16900CA1E03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -332,6 +494,7 @@
 			files = (
 				A9311B162C88C16900CA1E03 /* ViewController.swift in Sources */,
 				A95D89822C8AB93000B6BB72 /* OnboardingViewController.swift in Sources */,
+				A9A1902C2C9969E40061DB8B /* NetworkProvider.swift in Sources */,
 				A9311B122C88C16900CA1E03 /* AppDelegate.swift in Sources */,
 				A9311B1C2C88C16900CA1E03 /* SafeSleepApp.xcdatamodeld in Sources */,
 				A95D89892C8AB98100B6BB72 /* ForgetPassWordViewModel.swift in Sources */,
@@ -340,6 +503,7 @@
 				A95D89872C8AB97300B6BB72 /* ForgetPassWordViewController.swift in Sources */,
 				A95D898F2C8ABFB000B6BB72 /* Service.swift in Sources */,
 				A95D898D2C8AB9C200B6BB72 /* User.swift in Sources */,
+				A9DFB0172C9968CA0030430E /* RequestProvider.swift in Sources */,
 				A9311B142C88C16900CA1E03 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +681,7 @@
 		};
 		A9311B3C2C88C16D00CA1E03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 097C579409F3107CD181F6A4 /* Pods-SafeSleepApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -544,6 +709,7 @@
 		};
 		A9311B3D2C88C16D00CA1E03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB02060079B1199C8CF6D90 /* Pods-SafeSleepApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -571,6 +737,7 @@
 		};
 		A9311B3F2C88C16D00CA1E03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431F75813D73BDED3207943C /* Pods-SafeSleepAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -590,6 +757,7 @@
 		};
 		A9311B402C88C16D00CA1E03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 404D8A5C317A2F10F8B46AEE /* Pods-SafeSleepAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -609,6 +777,7 @@
 		};
 		A9311B422C88C16D00CA1E03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80966A4C38F67FAD0AC35037 /* Pods-SafeSleepApp-SafeSleepAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -626,6 +795,7 @@
 		};
 		A9311B432C88C16D00CA1E03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAB6978CE2E6C3FA5689C702 /* Pods-SafeSleepApp-SafeSleepAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

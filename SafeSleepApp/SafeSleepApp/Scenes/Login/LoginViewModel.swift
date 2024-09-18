@@ -11,17 +11,17 @@ class LoginViewModel {
     
     let service = Service()
     var viewController: LoginViewPresentation?
+    var user: User?
     
-    func validateLogin(email: String, password: String) {
-        guard let user = service.getUser(email: email) else {
-            viewController?.presentAlert(title: "Usuário não encontrado", message: "informar um usuário valido")
-            return
-        }
+    func validateLogin(username: String, password: String) {
         
-        if user.password == password {
-            viewController?.routeToSucess()
-        } else {
-            viewController?.presentAlert(title: "Dados invalidos", message: "informe novamente as informações")
-        }
+        service.validateLogin(model: User(id: nil, username: username, password: password, email: nil, name: nil))?.done({ user in
+            self.user = user
+            self.viewController?.routeToSucess()
+
+        }).catch({ _ in
+            self.viewController?.presentAlert(title: "Usuário não encontrado", message: "informar um usuário valido")
+        })
+      
     }
 }

@@ -14,7 +14,7 @@ protocol LoginViewPresentation: AnyObject{
 
 class ViewController: UIViewController, LoginViewPresentation {
 
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var documentTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     let viewModel = LoginViewModel()
@@ -25,7 +25,7 @@ class ViewController: UIViewController, LoginViewPresentation {
     }
 
     @IBAction func confirmButton(_ sender: Any) {
-        viewModel.validateLogin(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
+        viewModel.validateLogin(username: documentTextField.text ?? "", password: passwordTextField.text ?? "")
     }
     
     @IBAction func forgotPasswordButton(_ sender: Any) {

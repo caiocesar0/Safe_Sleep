@@ -6,22 +6,42 @@
 //
 
 import Foundation
+import PromiseKit
 
 class Service {
     
-    func save(user: User) {
-        if let encoded = try? JSONEncoder().encode(user) {
-            UserDefaults.standard.set(encoded, forKey: user.email)
+    func validateLogin(model: User) -> Promise<User>? {
+        var provider = RequestProvider()
+        provider.user = model
+        
+        guard let login = provider.validateLogin else {
+            return nil
         }
+        
+        return NetworkProvider.shared.request(login, parseAs: User.self)
     }
     
-    func getUser(email: String) -> User? {
-        if let data = UserDefaults.standard.data(forKey: email) {
-               if let decoded = try? JSONDecoder().decode(User.self, from: data) {
-                   return decoded
-               }
+    func createLogin(model: User) -> Promise<Void>? {
+        var provider = RequestProvider()
+        provider.user = model
+        
+        guard let create = provider.createLogin else {
             return nil
-           }
-        return nil
+        }
+        
+        return NetworkProvider.shared.request(create)
     }
+    
+    func changePassword(model: User) -> Promise<Void>? {
+        var provider = RequestProvider()
+        provider.user = model
+        
+        guard let change = provider.changePassword else {
+            return nil
+        }
+        
+        return NetworkProvider.shared.request(change)
+    }
+    
 }
+
